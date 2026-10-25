@@ -1,0 +1,27 @@
+name: lorry_memo_mobile
+description: "Lorry Memo and Accounts Management Mobile Application in Flutter for Tamil transport owners."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  supabase_flutter: ^2.8.0
+  intl: ^0.19.0
+  uuid: ^4.5.1
+  shared_preferences: ^2.3.2
+  flutter_svg: ^2.0.10+1
+  printing: ^5.13.1
+  pdf: ^3.11.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,17 @@
+{
+  "name": "Lorry Memo & Accounts | லாரி கணக்கு",
+  "short_name": "LorryMemo",
+  "description": "Digitized trip memos and accounting application for lorry transport owners",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e3a8a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
