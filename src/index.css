@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom scrollbars for ledger tables */
+.ledger-scroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.ledger-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+.ledger-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.ledger-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print styling for printing physical ledger memo */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-page {
+    box-shadow: none !important;
+    border: 1px solid #94a3b8 !important;
+    margin: 0 !important;
+    padding: 12px !important;
+    max-width: 100% !important;
+  }
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+  th, td {
+    border: 1px solid #475569 !important;
+    padding: 4px 6px !important;
+  }
+}
